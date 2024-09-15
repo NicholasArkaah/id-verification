@@ -1,0 +1,39 @@
+server:
+  port: 8085
+  ssl:
+    enabled: false
+
+
+
+spring.application.name: id-verification-ms
+springdoc.swagger-ui.path: /swagger-ui.html
+
+#DB Config Parameters
+spring.datasource.url: jdbc:postgresql://localhost:5432/id_verification_db
+spring.datasource.username: root
+spring.datasource.password: root
+spring.jpa.properties.hibernate: org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto: update
+
+
+#App Setup
+app.base_directory: uploaded-id-documents
+app.id_images: id-images
+app.allowed_file_formats: pdf,jpg,jpeg,gif,png
+
+app.merchant_key: 7188b1d7-a6ba-4f4f-ab7d-ba07578fa3d9
+app.id_verification_url: https://selfie.imsgh.org:2035/skyface/api/v1/third-party/verification/base_64
+
+multipart.maxFileSize: 5Mb
+multipart.maxRequestSize: 5Mb # Max request size.
+spring.servlet.multipart.max-file-size: 5MB
+spring.servlet.multipart.max-request-size: 5MB
+
+#logging.level.org.springframework.web.filter.CommonsRequestLoggingFilter=DEBUG
+logging.level.org.zalando.logbook: TRACE
+
+
+#Logging Config
+logging.level.root: INFO
+logging.file.path: log-file
+logging.file: application-log-file.log

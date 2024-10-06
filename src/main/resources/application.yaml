@@ -21,6 +21,10 @@ app.base_directory: uploaded-id-documents
 app.id_images: id-images
 app.allowed_file_formats: pdf,jpg,jpeg,gif,png
 
+#app.merchant_key: 7188b1d7-a6ba-4f4f-ab7d-ba07578fa3d9
+#app.id_verification_url: https://selfie.imsgh.org:2035/skyface/api/v1/third-party/verification/base_64
+#app.center: BRANCHLESS
+
 app.merchant_key: 7188b1d7-a6ba-4f4f-ab7d-ba07578fa3d9
 app.id_verification_url: https://selfie.imsgh.org:2035/skyface/api/v1/third-party/verification/base_64
 app.center: BRANCHLESS
